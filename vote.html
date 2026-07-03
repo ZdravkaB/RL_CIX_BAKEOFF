@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vote — Ralph Lauren Global CIX Bake Off</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     VOTE — REDIRECT / COMING SOON PAGE
+     To activate the real vote link:
+       1. Find the <a id="vote-link"> button below.
+       2. Replace href="#" with your voting form URL.
+       3. Optionally set the meta-refresh redirect at the top of
+          <head> once the link is ready (instructions inline).
+     ============================================================ */
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; font-family: 'Jost', sans-serif;
+    background: #0D2442; color: #f4efe3;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  .wrap { max-width: 560px; }
+  .kicker { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .kicker .rule { width: 36px; height: 1px; background: #c9a86a; }
+  .kicker span { font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: #c9a86a; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(30px, 5vw, 46px); line-height: 1.1; margin: 0 0 22px; color: #ffffff; }
+  h1 em { font-style: italic; color: #c9a86a; }
+  p { font-size: 16px; line-height: 1.8; color: #c3cad7; font-weight: 300; margin: 0 0 36px; }
+  a.btn { display: inline-block; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #15243f; background: #c9a86a; text-decoration: none; font-weight: 500; padding: 16px 36px; border-radius: 2px; pointer-events: none; opacity: 0.55; }
+  .note { margin-top: 20px; font-size: 12px; color: #8a93a6; }
+  .back-link { position: fixed; top: 28px; left: 28px; display: inline-flex; align-items: center; gap: 10px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #e9e2d2; text-decoration: none; }
+  .back-link:hover { color: #c9a86a; }
+  .back-link svg { width: 16px; height: 16px; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+    Back to Home
+  </a>
+  <div class="wrap">
+    <div class="kicker"><span class="rule"></span><span>Weekly Voting</span></div>
+    <h1>The vote hasn't<br><em>started yet</em></h1>
+    <p>For now the vote hasn't started — come back after the first baking session to crown the week's favourite!</p>
+    <!-- Once the real voting form is ready, replace href="#" below and remove pointer-events/opacity from the .btn rule above -->
+    <a id="vote-link" class="btn" href="#">Vote Now</a>
+    <div class="note">Check back soon, or head to the homepage for the schedule.</div>
+  </div>
+</body>
+</html>
